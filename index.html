@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Normalize CSS link-->
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="proj4.css">
+    <title>Project 4 - Jeremy Mendez</title>
+</head>
+<body>
+    <header>
+        <h2>Daily Tasks</h2>
+        <!--Empty H2 Tag Filled with date function from JavaScript File-->
+        <h2 id="display__date"></h2>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="input__box">
+                <input id="input" type="text" placeholder="Enter Your Tasks Here...">
+            </div>
+        </div>
+        <br>
+        <div class="button">
+            <button onclick="addItem()">Add Task</button>
+        </div>
+        <br>
+        <div id="cont" class="container">
+            <div id="todoList" class="item__list">  <!--PARENT ELEMENT HERE-->
+                <!-- Append To Child -->
+                <!--CHILD ELEMENT HERE-->
+            </div>
+        </div>
+        <br>
+        <div class="button">
+            <button id="clear" onclick="clearItem()">Clear Tasks</button>
+        </div>
+        <br>
+    </main>
+
+    <footer>
+        <p class="copyright">Copyright &copy; Jeremy Mendez 2023</p>
+    </footer>
+    <!--Js Script-->
+    <script src="proj4.js"></script>
+</body>
+</html>
